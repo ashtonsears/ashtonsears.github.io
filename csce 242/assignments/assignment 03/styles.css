@@ -19,13 +19,13 @@
 }
 
 #sub1{
-    color: white;
-    padding: 5px;
+    color: #4C6335;
+    padding-left:100px;
     margin: 5px;
 }
 
 #top-section{
-   padding: 0 40px 0 40px;
+   padding: 0 100px 0 100px;
 }
 
 .big-idea{
@@ -118,6 +118,7 @@
 /* Typography */
 body{
     font-family: Verdana, sans-serif;
+    margin: 0;
 }
 
 #main-header h1{
