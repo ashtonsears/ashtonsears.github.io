@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout With Flex</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header id="main-header">
+            <h1>Layout With Flex</h1>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+            <h2>Big Ideas!</h2>
+            <div id="big-ideas">
+                <section class="idea-block">
+                    <h3>Idea 1</h3>
+                    <p>Sample text.</p>
+                </section>
+                <section class="idea-block">
+                    <h3>Idea 2</h3>
+                    <p>Sample text.</p>
+                </section>
+                <section class="idea-block">
+                    <h3>Idea 3</h3>
+                    <p>Sample text.</p>
+                </section>
+            </div>
+            <div class="flex-container">
+                <section class="col1of3">
+                    <div class="flex-container">
+                        <section class="col1of2">
+                            <h3>Title 1</h3>
+                            <img src="images/200_100_placeholder.png" alt="200x100 Placeholder">
+                            <p>Sample text.</p>
+                            <h3>Title 2</h3>
+                            <img src="images/200_100_placeholder.png" alt="200x100 Placeholder">
+                            <p>Sample text.</p>
+                        </section>
+                        <section class="col1of2">
+                            <h3>Title 3</h3>
+                            <img src="images/200_100_placeholder.png" alt="200x100 Placeholder">
+                            <p>Sample text.</p>
+                            <h3>Title 4</h3>
+                            <img src="images/200_100_placeholder.png" alt="200x100 Placeholder">
+                            <p>Sample text.</p>
+                        </section>
+                    </div>
+                </section>
+                </section>
+                <section class="col3of6">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer id="main-footer">
+            <p>&copy; ashtonsears.com</p>
+        </footer>
+    </body>
+</html>

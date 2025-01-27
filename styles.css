@@ -1,31 +1,85 @@
 /* Structure */
-body {
+body{
     font-family: "Verdana", sans-serif;
     background-image: url('images/main_bg.jpg');
 }
 
-div {
+#main-header, #main-footer{
     background: #0F758C;
-    margin: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    color: #F2C49B;
 }
 
-/* Navigation */
-a{
+#main-header{
+    border-radius: 5px 5px 0 0;
+}
+
+#main-footer{
+    border-radius: 0 0 5px 5px;
+}
+
+#main-content{
+    padding-left: 10px;
+    padding: 5px;
+    background: #032940;
+    color: #0F758C;
+}
+
+.assignment {
+    background: #034159;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.assignment-image{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    text-align: center;
+}
+
+.assignment-title, a{
     text-decoration: none;
+    margin: 5px;
     color:#F2C49B;
+    text-align: center;
+}
+
+/* Typography */
+
+#main-header h1 {
+    color: #F2CD88;
+    text-align: center;
+}
+
+#main-header h2{
+    color:#032940;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 /* Tables */
 
-/* Typography */
-h1 {
-    color: #F2CD88;
+/* Larger Resolutions */
+@media (min-width: 900px) {
+    .flex-container {
+        display: flex;
+    }
+
+    .assignment{
+        flex: 1;
+    }
 }
 
-h2{
-    color:#032940;
-}
+/* Smaller Resolutions */
+@media (max-width: 899px) {
+    .flex-container {
+        display: block;
+    }
 
-p{
-    color: #034159;
+    #main-nav li, .assignment {
+        display: block;
+    }
 }
