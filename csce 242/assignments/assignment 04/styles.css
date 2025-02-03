@@ -1,0 +1,531 @@
+/* Styling help gotten from https://sc.edu/study/colleges_schools/artsandsciences */
+/* Structure */
+body {
+    background:white;
+    font-family: "Berlingske Sans", Arial, sans-serif;
+    margin: 0;
+}
+
+#main-header{
+    background-color: #000000;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    width: auto;
+}
+
+#college-title{
+    background-color: #73000A;
+    color: white;
+    display: block;
+    float: left;
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 700;
+    position: relative;
+}
+
+#college-title h1{
+    position: relative;
+    z-index: 10;
+    font-weight: 700;
+    font-size: 1.6em;
+    margin: 0;
+    padding: .15em 0; 
+}
+
+#main-pic{
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#main-pic img{
+    width: 100%;
+    height: auto;
+    max-width: 1110px;
+}
+
+#pic-caption{
+    background-color: #FFFFFF;
+    border-left: 5px solid #73000A;
+}
+
+#pic-caption h1{
+    color: #73000A;
+    padding: 0;
+    margin: 0;
+}
+
+#main-p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    margin: -5px 0 15px;
+    border-bottom: 1px solid #C7C7C7;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#main-ul-info{
+    display: inline-block;
+    width: auto;
+    margin: 0 -15px 0 -15px;
+}
+
+.main-ul-info a{
+    text-decoration: none;
+}
+
+.main-ul-info h4{
+    color:#73000A;
+    margin-top: 10px;
+    margin: 0px 0px 5px;
+    font-weight: 800;
+}
+
+.main-ul-info p{
+    font-size: 1em;
+    font-weight: 400;
+    color: black;
+}
+
+/* Positioning */
+#header-logo, #footer-logo{
+    float: left;
+    width: 100%;
+    padding-right: 10px;
+    display: block;
+}
+
+#main-content{
+    max-width: 930;
+    margin: 0 auto;
+}
+
+#main-content h3{
+    color:#73000A;
+    font-size: 1.3em;
+    font-weight: 800;
+    margin: 0px 0px 5px;
+}
+
+#main-content h4{
+    color:#73000A;
+    font-size: 1.17em;
+    font-weight: 800;
+    margin: 0px 0px 5px;
+}
+
+article{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C7C7C7;
+    float: left;
+    padding-top: 20px;
+    width: 100%;
+    font-weight: normal;
+}
+
+.right-column{
+    max-width: 24%;
+    float: left;
+    margin-right: 2.72%
+}
+
+.left-column{
+    width: 72%;
+    float: left;
+}
+
+.left-column h4{
+    margin-top: 0px;
+    border-style: none;
+    color: #73000a;
+    margin: 0px 0px 5px;
+    font-size: 1.17em;
+}
+
+.left-column p{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.8em;
+    color: black;
+}
+
+#more-news{
+    display: block;
+    text-align: right;
+    margin-right: 0;
+    padding: 20px;
+    text-decoration: none;
+    color:#73000A;
+}
+
+#pre-main-footer-links{
+    background-color: #ECECEC;
+    width: 100%;
+    position: relative;
+}
+
+#pre-main-footer-links ul, .main-footer ul{
+    list-style-type: none;
+    text-align: right;
+    padding-right: 70px;
+}
+
+#pre-main-footer-links li, #footer-socials li{
+    display: inline;
+    padding: 10px;
+}
+
+#pre-main-footer-links a{
+    text-decoration: none;
+    color: black;
+}
+
+#pre-main-footer-links h1{
+    font-weight: 700;
+    font-size: 1.3em;
+    float: left;
+    margin-bottom: .5em;
+    padding-left: 70px;
+}
+
+.main-footer{
+    background-color: #73000A;
+    width: 100%;
+    position: relative;
+}
+
+#footer-socials {
+    margin-left: auto;
+}
+
+.footer-links{
+    background-color: #73000A;
+    margin: 0;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-right: 70px;
+}
+
+.footer-links ul{
+    list-style-type: none;
+}
+
+.footer-links h2{
+    margin: 0;
+    padding: 0;
+    color: white;
+    border-bottom: 1px solid white;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.75em;
+}
+
+.footer-links li{
+    font-weight: 500;
+    font-size: .75em;
+    margin-bottom: 7px;
+    padding-bottom: 5px;
+    line-height: 1.3em;
+}
+
+.section1of3 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer-info-wrapper{
+    background-color: #000000;
+    border-top: 1px solid white;
+    margin: 0;
+    padding: 10px;
+}
+
+.footer-info-wrapper p{
+    margin:0;
+    padding:0;
+    color: white;
+}
+
+.footer-info-wrapper a, .footer-links a{
+    text-decoration: none;
+    color: white
+}
+
+/* Navigation */
+#gateway-nav{
+    display: block;
+    padding: .25em 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    color: white;
+    font-size: 9px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.gateways{
+    position: relative;
+    margin-left: .5rem;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.gateways ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.gateways li{
+    position: relative;
+    display: inline;
+    padding-right: 10px;
+}
+
+.gateways a{
+    text-decoration: none;
+    color: white;
+}
+
+.gateways a:hover{
+    background-color: #CC2E40;
+}
+
+#main-nav{
+    font-weight: 800;
+}
+
+#main-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#main-nav > ul > li:first-child{
+    border-top: 1px solid #C7C7C7;
+    background-color: #ECECEC;
+}
+
+#main-nav ul li{
+    border-bottom: 1px solid #C7C7C7;
+    line-height: 1.4em;
+    display: list-item;
+    padding: 10px;
+}
+
+#main-nav a{
+    color: black;
+    text-decoration: none;
+}
+
+#garnet-one{
+    color:#73000A;
+}
+
+#main-nav a:hover, #pre-main-footer-links a:hover, .footer-info-wrapper a:hover, .footer-links a:hover{
+    background-color: #CC2E40;
+    color: white;
+}
+
+/* Typography */
+header h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align:center;
+}
+
+/* Larger screens */
+@media only screen and (min-width: 768px) { 
+    .flex-container {
+        display: flex;
+        position: relative;
+        clear: both;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #header-logo, #footer-logo{
+        padding : 10px;
+        padding-left: 70px;
+        width: 250px;
+        height: 53px;
+    }
+
+    #pic-caption{
+        position: absolute;
+        font-size: .875em;
+        right: auto;
+        left: 3%;
+        bottom: 8%;
+        width: 35%;
+    }
+
+    #college-title{
+        padding-left: 70px;
+    }
+
+    #main-nav{
+        margin: 0 15px 0 15px;
+        float: left;
+        display: inline;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        width: 1300px;
+    }
+
+    #main-pic img{
+        padding-top:10px; 
+    }
+
+    #main-content{
+        padding: 0 180px;
+    }
+
+    .grid.main-ul-info{
+        --num-of-col: 3;
+    }
+
+    .grid{
+        list-style-type: none;
+        --gap: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(var(--num-of-col, 2), 1fr);
+        gap: var(--gap);
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links .section1of3 .flex-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Smaller screens */
+@media only screen and (max-width: 767px) { 
+    .flex-container {
+        display:flex;
+    }
+
+    #header-logo{
+        width: 185px;
+        height: 45px;
+        background-position: 10px 8px;
+        padding: 15px;
+    }
+
+    #footer-logo img{
+        max-width: 185px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #college-title {
+        padding-left: 5px;
+        font-size: 1em;
+        margin-bottom: 0px;
+    }
+
+    #pic-caption{
+        position: relative;
+        background-color: #ECECEC;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 100%;
+        z-index: 0;
+        right: 0;
+        left: auto;
+        padding-bottom: 1em;
+    }
+
+    #gateway-nav{
+        display: none;
+    }
+
+    #main-nav{
+        display: none;
+    }
+
+    #main-content{
+        padding: 10px;
+    }
+
+    .grid.main-ul-info{
+        --num-of-col: 2;
+    }
+
+    .grid{
+        list-style-type: none;
+        --gap: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(var(--num-of-col, 2), 1fr);
+        gap: var(--gap);
+        padding: 0;
+        margin: 0;
+    }
+
+    .article{
+        width: 100%;
+    }
+
+    #pre-main-footer-links ul{
+        float: left;
+        clear: both;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .main-footer ul{
+        text-align: center;
+    }
+
+    .main-footer{
+        margin: 0;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .footer-links{
+        margin: 0;
+        float: left;
+        display: inline;
+        width: 100%;
+        position: relative;
+    }
+
+    .footer-links h2{
+        padding: 15px;
+    }
+
+    #footer-socials{
+        display: inline;
+        position: relative;
+        width: 100%;
+    }
+
+    .section1of3{
+        margin: 0;
+        width: 100%;
+        display: inline-block;
+    }
+}

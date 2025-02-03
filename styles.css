@@ -26,25 +26,34 @@ body{
     color: #0F758C;
 }
 
-.assignment {
+.assignment, .project {
     background: #034159;
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
 }
 
-.assignment-image{
+.assignment-image, .project-image{
     width: 100%;
     height: auto;
     margin: 5px;
     text-align: center;
 }
 
-.assignment-title, a{
+.assignment-title, .project-title, a{
     text-decoration: none;
     margin: 5px;
     color:#F2C49B;
     text-align: center;
+}
+
+#main-header ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+#main-header li{
+    display: inline;
 }
 
 /* Typography */
@@ -54,10 +63,11 @@ body{
     text-align: center;
 }
 
-#main-header h2{
+#main-header a{
     color:#032940;
-    text-align: center;
     padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 30px;
 }
 
 /* Tables */
@@ -69,7 +79,7 @@ body{
     }
 
     .assignment{
-        flex: 1;
+        flex: 2;
     }
 }
 
