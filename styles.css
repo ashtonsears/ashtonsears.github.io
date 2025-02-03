@@ -54,6 +54,7 @@ body{
 
 #main-header li{
     display: inline;
+    padding: 10px;
 }
 
 /* Typography */
