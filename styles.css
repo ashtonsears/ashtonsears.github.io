@@ -40,7 +40,7 @@ body{
     text-align: center;
 }
 
-.assignment-title, .project-title, a{
+.assignment-title a, .project-title a{
     text-decoration: none;
     margin: 5px;
     color:#F2C49B;
