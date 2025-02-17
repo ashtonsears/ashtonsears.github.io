@@ -1,0 +1,68 @@
+/* Structure */
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F5EBD1;
+}
+
+#exercise1, #exercise2 {
+    text-align: center;
+    border: 1px solid #58004F;
+    color: #58004F;
+    background-color: #F4C7B7;
+    font-size: 24px;
+}
+
+/* Typography */
+h1{
+    text-align: center;
+    font-size: 42px;
+    color: #58004F;
+}
+
+h2{
+    text-align: center;
+    color: #CE7F98;
+    font-size: 36px;
+}
+
+h4{
+    text-align: center;
+    color: #CE7F98;
+    font-size: 28px;
+}
+
+/* Navigation */
+
+#main_nav_items ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #58004F;
+}
+
+.hidden{
+    display: none;
+}
+
+.rotated{
+    transform: rotate(180deg);
+}
+
+/* Larger Resolutions */
+@media only screen and (min-width: 768px) {
+    .flex-container{
+        display: flex;
+    }
+
+    #main_nav_items{
+        display: inline-block;
+    }
+
+    #nav_toggle{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+}
