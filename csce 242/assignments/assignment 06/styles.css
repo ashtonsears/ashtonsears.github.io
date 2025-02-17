@@ -10,6 +10,9 @@ body{
     color: #58004F;
     background-color: #F4C7B7;
     font-size: 24px;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 /* Typography */
@@ -31,13 +34,38 @@ h4{
     font-size: 28px;
 }
 
+.exercise_title{
+    font-size: 20px;
+}
+
+.exercise_instructions{
+    font-size: 16px;
+}
+
+.heart{
+    color: white;
+    font-size: 100px;
+}
+
+#transport_img{
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+    padding: 10px;
+}
+
 /* Navigation */
 
-#main_nav_items ul{
+#main_nav_items li{
+    color: #58004F;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #58004F;
+    cursor: pointer;
+}
+
+#nav_triangle{
+    color:#58004F;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .hidden{
@@ -55,7 +83,17 @@ h4{
     }
 
     #main_nav_items{
-        display: inline-block;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #main_nav_items li{
+        display: inline;
+    }
+
+    #main_nav_items li:not(:last-child)::after {
+        content: '|';
+        margin-left: 8px;
     }
 
     #nav_toggle{
