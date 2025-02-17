@@ -47,11 +47,18 @@ h4{
     font-size: 100px;
 }
 
-#transport_img{
-    width: 100%;
+#transport_imag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#transport_img img {
+    width: 300px;
     height: auto;
-    max-width: fit-content;
     padding: 10px;
+    margin: auto;
 }
 
 /* Navigation */
