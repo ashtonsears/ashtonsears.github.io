@@ -79,7 +79,7 @@ body{
         display: flex;
     }
 
-    .assignment{
+    .assignment, .project{
         flex: 2;
     }
 }

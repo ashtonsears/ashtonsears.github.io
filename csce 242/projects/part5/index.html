@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About Us</title>
+        <title>Home</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -37,16 +37,63 @@
             <h2>Who Needs Sleep?</h2>
             <p>Sleep's biological purpose remains a mystery.
                 However, what we do know is that sleep is as essential to life as food and water— it is so important that the average person will spend a third of their life doing it.
+                In fact, the world record for the person who went the longest without food (arguably an important resource for life) is 74 days, set by Angus Barbieri in 1965; however, the world record for the person who went the longest without sleep is 11 days and 25 minutes, set by Randy Gardner in 1964.
+                That's a difference of 63 days! Therefore, sleep must be important. The question that remains is why?
                 Sleep affects many parts of the body and plays a role in brain function, memory consolidation, heart function, metabolism, immune function, mood, and disease resistance.
                 Most adults need around seven to nine hours of sleep every night. 
                 Not getting enough sleep every night can increase the risk of problems like high blood pressure, cardiovascular disease, diabetes, depression, and obesity.
             </p>
-            <p>Sleep disorders are conditions that affect the amount and quality of one's sleep. 
-                These disorders can have affects on a person's overall health, safety, and quality of life; however, many people with sleep disorders go undiagnosed. 
+            <p>Sleep disorders are conditions that can significantly affect the amount and quality of one's sleep. 
+                These disorders can have far-reaching affects on a person's overall health, well-being, safety, and quality of life. 
+                The consequences of untreated sleep disorders may include impaired cognitive function, weakened immune system, and increased risk of serious health conditions.
+                Unfortunately, many individuals with sleep disorders remain undiagnosed. 
                 Around 50% of people with narcolepsy and 90% of people with sleep apnea are undiagnosed, and therefore are also untreated.
-                There are many barriers to diagnosis, but an important one to acknowledge is that symptoms of sleep disorders often get overlooked by health care providers.
-                Sleep Symptom Tracker exists to help people identify and track symptoms of sleep disorders to help with the diagnostic process.
+                There are many barriers to diagnosis, ranging from a lack of access to a sleep physician to insufficient screening by healthcare providers.
+                One important barrier to acknowledge is that symptoms of sleep disorders are often subtle or mistaken for other issues, leading to these symptoms getting overlooked by health care providers.
+                Sleep Symptom Tracker exists to address this problem. Sleep Symptom Tracker helps people identify and track symptoms of sleep disorders.
+                By doing so, the tracker aims to raise awareness and assist both patients and helathcare professionals in the diagnostic process, ultimately contributing to more timely disanoses and better treatment outcomes.
             </p>
+            <h3>How Sleepy are You During the Day?</h3>
+            <h2 id="epiworth_title">Epiworth Sleepiness Scale</h2>
+            <!--Adopted from here: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod2/epworth-P.pdf-->
+            <div id="symptom_form">
+                <div id="symptom_text">
+                <h4>How likely are you to nod off or fall asleep in the following situations, in contrast to feeling just tired?</h4>
+                <h5>Sitting and Reading:</h5>
+                <div class="slide_container">
+                    <input type="range" min="1" max="3" value="2" class="slider" id="restfulness_range">
+                </div>
+                <h5>Watching TV:</h5>
+                <div class="slide_container">
+                    <input type="range" min="1" max="3" value="2" class="slider" id="restfulness_range">
+                </div>
+                <h5>Sitting, inactive, in a public place:</h5>
+                <div class="slide_container">
+                    <input type="range" min="1" max="3" value="2" class="slider" id="restfulness_range">
+                </div>
+                <h5>As a passenger in a car for an hour or more without stopping for a break:</h5>
+                <div class="slide_container">
+                    <input type="range" min="1" max="3" value="2" class="slider" id="restfulness_range">
+                </div>
+                <h5>Lying down to rest when circumstances permit:</h5>
+                <div class="slide_container">
+                    <input type="range" min="1" max="3" value="2" class="slider" id="restfulness_range">
+                </div>
+                <h5>Sitting and talking to someone:</h5>
+                <div class="slide_container">
+                    <input type="range" min="1" max="3" value="2" class="slider" id="restfulness_range">
+                </div>
+                <h5>Sitting quietly after a meal without alcohol:</h5>
+                <div class="slide_container">
+                    <input type="range" min="1" max="3" value="2" class="slider" id="restfulness_range">
+                </div>
+                <h5>In a car, while stopped for a few minutes in traffic or at a light:</h5>
+                    <div class="slide_container">
+                        <input type="range" min="1" max="3" value="2" class="slider" id="restfulness_range">
+                    </div>
+                </div>
+                <h4 id="epiworth_score">Your score is: 20</h4>
+            </div>
             <h3>Sleep Fast Facts</h3>
             <div class="slideshow flex-container">
                 <section class="aboutcol1of5 about_prev">

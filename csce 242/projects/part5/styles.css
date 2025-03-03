@@ -291,12 +291,31 @@ main h3{
     margin-left: 20%;
 }
 
+#epiworth_title{
+    margin-left: 20%;
+    font-size: 18px;
+}
+
+#epiworth_score{
+    padding: 10px;
+}
+
 #our_team{
     padding-left: 20px;
 }
 
 .symptom_list li{
     padding: 5px;
+}
+
+.symptom_img{
+    text-align: center;
+}
+
+.symptom_img img{
+    width: 400px;
+    height: 200px;
+    padding: 20px;
 }
 
 /* Large Resolutions */
@@ -334,6 +353,14 @@ main h3{
     #nav_toggle{
         display: none;
     }
+
+    #main_nav_items{
+        display: block;
+    }
+
+    .symptom_col{
+        flex: 2;
+    }
 }
 
 /* Small Resolutions */
@@ -369,5 +396,9 @@ main h3{
         right: 20px;
         padding: 20px;
         cursor: pointer;
+    }
+
+    #main_nav_items.hidden{
+        display: none;
     }
 }
