@@ -9,7 +9,7 @@ window.onload = () => {
 }
 
 const getDisorders = async() => {
-    const url = "https://api.openbrewerydb.org/breweries";
+    const url = "https://ashtonsears.github.io/csce%20242/json/sleep_disorders.json";
 
     try {
         const response = await fetch(url);
@@ -20,15 +20,21 @@ const getDisorders = async() => {
 };
 
 const showDisorders = async() => {
-    const breweriesSection = document.getElementById("breweries");
-    const breweries = await getBreweries();
+    const disordersDiv = document.getElementById("grid");
+    const disorders = await getDisorders();
     
-    breweries.forEach(async(disorder)=> {
+    disorders.forEach(async(disorder)=> {
         const section = document.createElement("section");
-        section.classList.add("brewery");
-        breweriesSection.append(section);
+        section.classList.add("disorder");
 
-        const a = document.createElement("a");
+        const img = document.createElement("img");
+        img.src = disorder.image;
+        section.append(img);
+
+        disordersDiv.append(section);
+
+
+        /*const a = document.createElement("a");
         a.href = brewery.website_url;
         section.append(a);
 
@@ -40,11 +46,15 @@ const showDisorders = async() => {
         p.innerHTML = brewery.brewery_type + " brewery";
         section.append(p);
 
-        const iframe = document.createElement("iframe");
-        iframe.src = await getMap(brewery.latitude, brewery.longitude);
-        section.append(iframe);
-    });
-    
+        const ul = document.createElement("ul");
+        section.append(ul);
+
+        shoe.reviews.forEach((review)=>{
+            const li = document.createElement("li");
+            li.append(review);
+            ul.append(li);
+        });*/
+    }); 
 };
 
 showDisorders();

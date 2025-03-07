@@ -2,7 +2,7 @@
     {
         "_id": 1,
         "name": "Sleep Apnea",
-        "image": "sleep_apnea_disorder_img.jpg",
+        "image": "images/sleep_apnea_disorder_img.jpg",
         "description": "Sleep apnea is a sleep-wake disorder characterized by pauses in breathing while asleep. These pauses cause people with this condition to briefly wake up, preventing them from getting a restful, healthy sleep. There are three main types of sleep apnea: obstructive sleep apnea, which occurs when the throat muscles relax and block the flow of air into the lungs; central sleep apnea, which occurs when the brain does not send proper siganls to the muscles that control breathing; and treatment-emergent central sleep apnea, which happens when someone with obstructive sleep apnea converts to central sleep apnea when receiving therapy for obstructive sleep apnea.",
         "symptoms": [
             "Loud snoring",
@@ -31,7 +31,7 @@
     {
         "_id": 2,
         "name": "Insomnia",
-        "image": "insomnia_disorder_img.jpt",
+        "image": "images/insomnia_disorder_img.jpt",
         "description": "Insomnia is a common sleep disorder characterized by difficulty falling or staying asleep. Many adults can have short-term insomnia, but some people have chronic insomnia that can last for three months or more.",
         "symptoms": [
             "Difficulty falling asleep",
@@ -59,7 +59,7 @@
     {
         "_id": 3,
         "name": "Narcolepsy",
-        "image": "narcolepsy_disorder_img.jpg",
+        "image": "images/narcolepsy_disorder_img.jpg",
         "description": "Narcolepsy is a sleep-wake disorder characterized by excessive daytime sleepiness, sudden muscle weakness (cataplexy), sleep-related hallucinations, and sleep paralysis. There are two types of narcolepsy. Type 1 narcolepsy involves cataplexy, while type 2 narcolepsy does not.",
         "symptoms": [
             "Excessive daytime sleepiness",
@@ -89,7 +89,7 @@
     {
         "_id": 4,
         "name": "Restless Legs Syndrome",
-        "image": "restless_leg_disorder_img.jpg",
+        "image": "images/restless_leg_disorder_img.jpg",
         "description": "Restless legs syndrome (RLS) is a movement disorder characterized by a strong urge to move the legs when asleep or resting.",
         "symptoms": [
             "Uncomfortable sensations that begin while resting",
@@ -114,7 +114,7 @@
     {
         "_id": 5,
         "name": "Shift Work Sleep Disorder",
-        "image": "shift_work_disorder_img.jpg",
+        "image": "images/shift_work_disorder_img.jpg",
         "description": "Shift work sleep disorder (SWSD) is a circadian rhythm sleep disorder characterized by an abnormal sleep/wake schedule. This disorder commonly affects people who work nontraditional hours, like overnight shifts.",
         "symptoms": [
             "Insomnia",
@@ -139,7 +139,7 @@
     {
         "_id": 6,
         "name": "Delayed Sleep Phase Syndrome",
-        "image": "delayed_sleep_disorder_img.jpg",
+        "image": "images/delayed_sleep_disorder_img.jpg",
         "description": "Delayed sleep phase syndrome is a circadian rhythm disorder that is characterized by a delay of two hours or more from usual sleep patterns. This means that people with this disorder fall asleep later and wake up later than normal. There are two types of delayed sleep phase syndrome: circadian aligned, meaning the onset of melatonin is less than two hours before falling asleep, and circadian misaligned, meaning the onset of melatonin happens more than two hours before falling asleep.",
         "symptoms": [
             "Insomnia",
@@ -162,7 +162,7 @@
     {
         "_id": 7,
         "name": "REM Sleep Behavior Disorder",
-        "image": "rem_disorder_img.jpg",
+        "image": "images/rem_disorder_img.jpg",
         "description": "REM sleep behavior disorder (RBD) is a conditioned characterized by physically acting out dreams with sounds and movements during REM sleep. This disorder may be associated with other neurological conditions like Lewy body dementia or Parkinson's disease.",
         "symptoms": [
             "Excessive movement when sleeping",
@@ -184,7 +184,7 @@
     {
         "_id": 8,
         "name": "Idiopathic Hypersomnia",
-        "image": "idiopathic_hypersomnia_disorder_img.jpg",
+        "image": "images/idiopathic_hypersomnia_disorder_img.jpg",
         "description": "Idiopathic hypersomnia is a condition that is characterized by extreme sleepiness during the day, no matter how much sleep someone gets. People with this condition often have trouble waking up from sleep and do not feel refreshed by naps.",
         "symptoms": [
             "Excessive daytime sleepiness",
@@ -209,7 +209,7 @@
     {
         "_id": 9,
         "name": "Parasomnias",
-        "image": "parasomnias_disorder_img.jpg",
+        "image": "images/parasomnias_disorder_img.jpg",
         "description": "Parasomnias are disruptive behaviors or events that affect a person's sleep. There are three groupings of parasomnias based on the stage of sleep in which they happen: non-rapid eye movement (non-REM) sleep parasomnias, rapid eye movement (REM) sleep parasomnias, and other parasomnias.",
         "symptoms": [
             "Sleep terrors",

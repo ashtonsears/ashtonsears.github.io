@@ -207,11 +207,12 @@ main{
     padding: 10px;
 }
 
-.grid div{
+.disorder{
     padding: 10px;
     border: 10px solid #ECEEEB;
     text-align: center;
     position: relative;
+    background-color: #6497B1;
 }
 
 .grid_img img{
