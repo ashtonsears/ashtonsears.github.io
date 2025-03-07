@@ -1,3 +1,4 @@
+
 /* Structure */
 :root {
     --main-background-color:#CDECEF;
@@ -24,7 +25,11 @@ header, footer {
     background:var(--primary-color);
     color:white;
     position:relative;
-    padding:20px 0;
+    padding:20px 0 10px;
+}
+
+header {
+    padding-bottom:3px;
 }
 
 header {
@@ -61,6 +66,11 @@ main {
     background:var(--gallery-color);
 }
 
+/* Slideshow */
+#slideshow img {
+    max-width:100%;
+}
+
 .links {
     background:#D3DDEA;
 }
@@ -76,6 +86,12 @@ main {
 
 .sad {
     color:purple;
+}
+
+.sub-section a {
+    text-decoration:none;
+    color:var(--primary-color);
+    text-align:center;
 }
 
 .hidden {
@@ -128,6 +144,11 @@ main {
 
 .error {
     color:darkred;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
 }
 
 @keyframes fun {
@@ -240,6 +261,20 @@ footer p {
 
     .examples section:nth-child( even ) {
         background:var(--main-background-color);
+    }
+
+    #shoes-section  {
+        max-width:100% ;
+    }
+    #shoes-section section {
+        max-width:100% !important;
+    }
+
+    .brewery {
+        background-color:var(--gallery-color);
+        padding:10px;
+        border-radius: 5px;
+        margin:5px;
     }
 }
 /* Larger screens */
