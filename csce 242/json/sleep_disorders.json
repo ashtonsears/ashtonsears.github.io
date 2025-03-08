@@ -31,7 +31,7 @@
     {
         "_id": 2,
         "name": "Insomnia",
-        "image": "images/insomnia_disorder_img.jpt",
+        "image": "images/insomnia_disorder_img.jpg",
         "description": "Insomnia is a common sleep disorder characterized by difficulty falling or staying asleep. Many adults can have short-term insomnia, but some people have chronic insomnia that can last for three months or more.",
         "symptoms": [
             "Difficulty falling asleep",
@@ -184,7 +184,7 @@
     {
         "_id": 8,
         "name": "Idiopathic Hypersomnia",
-        "image": "images/idiopathic_hypersomnia_disorder_img.jpg",
+        "image": "images/idiopathic_hypersomnia_disorder_img.jpeg",
         "description": "Idiopathic hypersomnia is a condition that is characterized by extreme sleepiness during the day, no matter how much sleep someone gets. People with this condition often have trouble waking up from sleep and do not feel refreshed by naps.",
         "symptoms": [
             "Excessive daytime sleepiness",

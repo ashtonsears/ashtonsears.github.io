@@ -210,29 +210,29 @@ main{
 .disorder{
     padding: 10px;
     border: 10px solid #ECEEEB;
-    text-align: center;
     position: relative;
-    background-color: #6497B1;
+    text-align: center;
+    background-color: #B3CDE0;
 }
 
-.grid_img img{
+.disorder li{
+    text-align: left;
+}
+
+.grid_img {
     margin: 0;
     padding: 0;
     width: 400px;
     height: 225px;
 }
 
-.grid_img h4{
+.grid_title {
     font-size: 18px;
-    background-color: #B3CDE0;
+    color: #ECEEEB;
+    background-color: #6497B1;
     text-align: left;
     padding: 10px;
     margin: 0;
-}
-
-.grid_img a{
-    text-decoration: none;
-    color: #ECEEEB;
 }
 
 /* Slideshow */
