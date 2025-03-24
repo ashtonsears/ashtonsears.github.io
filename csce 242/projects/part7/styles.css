@@ -1,0 +1,410 @@
+/* Structure */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ECEEEB;
+}
+
+header, footer{
+    background-color: #011F4B;
+}
+
+.header_logo img{
+    width: 200px;
+    height: 100px;
+}
+
+.header_logo h1{
+    color: #ECEEEB;
+}
+
+footer h4{
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+    margin: 0;
+    color: #ECEEEB;
+}
+
+.col1of4{
+    background-color: #B3CDE0;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+#symptom_form{
+    background-color: #B3CDE0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#symptom_text{
+    padding: 10px;
+}
+
+.aboutcol1of2{
+    padding: 10px;
+}
+
+.aboutcol1of2 img{
+    width: 100%;
+    height: auto;
+    max-width: 1110px;
+}
+
+/* Positioning */
+.login_buttons{
+    text-align: right;
+    padding: 20px;
+}
+
+main{
+    padding: 20px;
+}
+
+/* Navigation */
+#main_nav{
+    text-align: right;
+    padding-bottom: 1px;
+}
+
+#main_nav ul{
+    list-style-type: none;
+}
+
+#main_nav li{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#main_nav a{
+    text-decoration: none;
+    color: #ECEEEB;
+}
+
+#main_nav a:hover{
+   text-decoration: underline;
+}
+
+/* Hambuger Menu */
+#nav_toggle div{
+    width: 35px;
+    height: 5px;
+    background-color: #ECEEEB;
+    margin: 6px 0;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Sliders */
+.slide_container{
+    width: 70%;
+}
+
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background-color: #6497B1;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #011F4B;
+    cursor: pointer;
+}
+
+/* Calendar */
+/* Adapted from https://www.w3schools.com/howto/howto_css_calendar.asp */
+#stats_title{
+    margin-left: 5%;
+}
+
+#calendar ul{
+    list-style-type: none;
+}
+
+#calendar{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.month{
+    background-color: #011F4B;
+    color: #ECEEEB;
+    text-align: center;
+    padding: 10px;
+}
+
+.month ul{
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li{
+    font-size: 20px;
+}
+
+.month .prev{
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next{
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays{
+    margin: 0;
+    padding: 10px 0;
+    background-color: #005B96;
+}
+
+.weekdays li{
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    color: #ECEEEB;
+}
+
+.days{
+    padding: 10px 0;
+    background-color: #B3CDE0;
+    margin: 0;
+}
+
+.days li{
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.active {
+    background: #011F4B;
+    color: #ECEEEB !important;
+}
+
+.statcol1of2{
+    margin-left: 5%;
+}
+
+/* Grid */
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.disorder{
+    padding: 10px;
+    border: 10px solid #ECEEEB;
+    position: relative;
+    text-align: center;
+    background-color: #B3CDE0;
+}
+
+.disorder li{
+    text-align: left;
+}
+
+.grid_img {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 225px;
+}
+
+.grid_title {
+    font-size: 18px;
+    color: #ECEEEB;
+    background-color: #6497B1;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Slideshow */
+.slideshow{
+    text-align: center;
+}
+
+.about_prev, .about_next{
+    font-size: 36px;
+    margin-top: 70px;
+}
+
+.slideshow a{
+    text-decoration: none;
+    color: #6497B1;
+}
+
+.aboutcol1of5{
+    padding: 10px;
+}
+
+/* Chart */
+.chart{
+    text-align: center;
+    padding:5px;
+}
+
+#sample_chart{
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+}
+
+/* Typography */
+.col1of2 h1{
+    display: inline;
+    font-size: 30px;
+    position: absolute;
+    padding-left: 5px;
+}
+
+.col1of2 a{
+    text-decoration: none;
+    color: #6497B1;
+}
+
+main h3{
+    text-align: center;
+}
+
+.col1of4 a{
+    text-decoration: none;
+    color: #6497B1;
+}
+
+#symptom_title{
+    margin-left: 20%;
+}
+
+#epiworth_title{
+    margin-left: 20%;
+    font-size: 18px;
+}
+
+#epiworth_score{
+    padding: 10px;
+}
+
+#our_team{
+    padding-left: 20px;
+}
+
+.symptom_list li{
+    padding: 5px;
+}
+
+.symptom_img{
+    text-align: center;
+}
+
+.symptom_img img{
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+}
+
+/* Videos */
+.video{
+    text-align: center;
+}
+
+/* Large Resolutions */
+@media only screen and (min-width: 768px) {
+    .flex-container{
+        display: flex;
+    }
+
+    .col1of2, .col1of4, .statcol1of2, .aboutcol1of2, .aboutcol1of5{
+        flex: 1;
+    }
+
+    .col1of4{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #notes{
+        columns: 50;
+    }
+    
+    .grid{
+        grid-template-columns: repeat(var(--num-of-col, 3), 1fr);;
+    }
+
+    .grid_img h4{
+        position: absolute;
+        padding: 10px;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #nav_toggle{
+        display: none;
+    }
+
+    #main_nav_items{
+        display: block;
+    }
+
+    .symptom_col{
+        flex: 2;
+    }
+}
+
+/* Small Resolutions */
+@media only screen and (max-width: 767px) {
+    .login_buttons{
+        display: none;
+    }
+
+    .grid{
+        grid-template-columns: repeat(var(--num-of-col, 1), 1fr);;
+    }
+
+    #main_nav{
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    #main_nav li{
+        display: block;
+        padding: 5px;
+        border: 1px solid #011F4B;
+        background-color: #B3CDE0;
+    }
+
+    .about_next, .about_prev{
+        display: none;
+    }
+
+    #nav_toggle{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    #main_nav_items.hidden{
+        display: none;
+    }
+}
