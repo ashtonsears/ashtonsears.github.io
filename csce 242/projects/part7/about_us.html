@@ -53,7 +53,7 @@
                     </p>
                 </section>
             </div>
-            <h2 id="our_team">Our Team</h2>
+            <h2 class="our_team">Our Team</h2>
             <!--I'd like to make this a slideshow but not sure how to do that as of now-->
             <div class="slideshow flex-container">
                 <section class="aboutcol1of5 about_prev">
@@ -75,10 +75,30 @@
                     <a href="#"><p>&#10095;</p></a>
                 </section>
             </div>
+            <h2 class="our_team">Contact Us</h2>
+            <div id="contact_form">
+                <form method="POST" id="form">
+                    <input type="hidden" name="access_key" value="358e2d6d-1eb4-4c85-8f2f-99b78f140520">
+    
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+    
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email here" required>
+    
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+    
+                    <input type="checkbox" name="botcheck" id="" style="display: none;">
+    
+                    <button type="submit">Submit Form</button>
+                    <h4 id="result" class="hidden"></h4>
+                </form>
+            </div>
         </main>
         <footer>
             <h4>@ashtonsears.com</h4>
         </footer>
-        <script src="script.js"></script>
+        <script src="js/contact-us.js"></script>
     </body>
 </html>

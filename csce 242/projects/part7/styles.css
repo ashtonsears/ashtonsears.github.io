@@ -224,6 +224,7 @@ main{
     padding: 0;
     width: 400px;
     height: 225px;
+    cursor: pointer;
 }
 
 .grid_title {
@@ -233,6 +234,7 @@ main{
     text-align: left;
     padding: 10px;
     margin: 0;
+    cursor: pointer;
 }
 
 /* Slideshow */
@@ -292,16 +294,7 @@ main h3{
     margin-left: 20%;
 }
 
-#epiworth_title{
-    margin-left: 20%;
-    font-size: 18px;
-}
-
-#epiworth_score{
-    padding: 10px;
-}
-
-#our_team{
+.our_team{
     padding-left: 20px;
 }
 
@@ -319,8 +312,82 @@ main h3{
     padding: 20px;
 }
 
+/* Modals */
+.close{
+    color: #ECEEEB;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #6497B1;
+    color:#ECEEEB;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.modal_center{
+    text-align: center;
+}
+
+.modal_img{
+    text-align: center;
+}
+
+.modal_img img{
+    width: 400px;
+    height: 225px;
+}
+
 /* Videos */
 .video{
+    text-align: center;
+}
+
+/* Contact */
+#contact_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #B3CDE0;
+}
+
+form input, form textarea{
+    margin-bottom: 12px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #011F4B;
+}
+
+form textarea{
+    height: 200px;
+    resize: vertical;
+}
+
+#result{
+    font-weight: bold;
     text-align: center;
 }
 
