@@ -1,0 +1,71 @@
+/* Structure */
+body {
+    font-family: "Verdana", sans-serif;
+    background-image: url("images/crk_background.png");
+}
+
+div{
+    background: #F5EFE2;
+    margin: 35px;
+}
+
+/* Navigation */
+a{
+    text-decoration: none;
+    background: #FEDB9C;
+    color: #645668;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:hover {
+    background: #F2BB77;
+    text-shadow: 1px 1px 1px #645668;
+}
+
+/*Images*/
+#ancient_pic {
+    display: block;
+    margin: auto;
+}
+
+img{
+    border: 4px solid #F2BB77;
+    padding: 2px;
+}
+
+
+/* Tables */
+table {
+   border: 4px solid #F2BB77;
+}
+
+th,
+td {
+    border: 1px solid #FEDB9C;
+    padding: 10px;
+}
+
+th {
+    color:#645668;
+    background-color: #e4bfc9;
+}
+
+td {
+    text-align: center;
+    background-color: #F5EFE2; 
+}
+
+.big_name{
+    font-size: 16pt;
+}
+
+/* Typography */
+h1 {
+    color: #A6294B;
+    text-decoration: underline;
+}
+
+h2 {
+    color:#645668;
+}

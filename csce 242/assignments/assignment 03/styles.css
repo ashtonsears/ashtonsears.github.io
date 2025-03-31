@@ -1,0 +1,165 @@
+/* Structure */
+#main-header, #main-footer{
+    background-color: #D3ACE3;
+    padding: 5px;
+}
+
+#main-header{
+    border-radius: 5px 5px 0 0;
+}
+
+#main-footer{
+    border-radius: 0 0 5px 5px;
+    color: white;
+}
+
+#main-content{
+    background: #D3ACE3;
+    padding:5px;
+}
+
+#sub1{
+    color: #4C6335;
+    padding-left:100px;
+    margin: 5px;
+}
+
+#top-section{
+   padding: 0 100px 0 100px;
+}
+
+.big-idea{
+    background-color: #C9E3AF;
+    color: #4C6335;
+    padding: 5px;
+    margin: 5px;
+}
+
+.col2of2{
+    margin: 5px;
+    padding: 5px;
+}
+
+#odd1{
+    background-color: #563663;
+    color:#D3ACE3;
+    padding: 5px;
+    margin: 5px;
+}
+
+.col2of6, .col3of6 {
+    background-color: #4C6335;
+    color: #C9E3AF;
+    margin: 0;
+    padding: 0;
+}
+
+.col1of6 {
+    background-color: #563663;
+    margin: 0;
+    padding: 0;
+}
+
+.col1of6 h3{
+    color:#D3ACE3;
+    padding-left: 10px;
+    display: inline;
+}
+
+.col1of6 ul {
+    padding-left: 10px;
+    display: inline;
+}
+
+.col1of6 li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.col1of6 a {
+    text-decoration: none;
+    padding: 5px;
+    color: #D3ACE3;
+}
+
+.titlecol1of2, .titlecol1of3{
+    text-align: center;
+    padding: 5px;
+}
+
+.titlecol1of2 p, .titlecol1of3 p{
+    text-align: left;
+}
+
+/* Main Navigation */
+#main-nav ul{
+   padding-left: 0px;
+   text-align: center;
+}
+
+#main-nav li{
+    list-style-type: none;
+    padding: 5px;
+    background-color: #563663;
+    border: 1px solid #D3ACE3;
+}
+
+#main-nav a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    border-radius: 2px;
+}
+
+#main-nav a:hover{
+    color: #D3ACE3;
+}
+
+/* Typography */
+body{
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+#main-header h1{
+    color: #4C6335;
+    text-align: center;
+}
+
+/* Larger Resolutions */
+@media (min-width: 900px){
+    #main-nav ul, .flex-container{
+        display: flex;
+    }
+
+    #main-nav li, .col1of6 {
+        flex: 1;
+    }
+
+    .col1of2, .col2of6{
+        flex: 2;
+    }
+
+    .col3of6{
+        flex: 3;
+    }
+}
+
+/* Smaller Resolutions */
+@media (max-width: 899px) {
+    .flex-container {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    #main-nav li, .col1of2, .col2of2, .col1of3{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .col2of2{
+        text-align: center;
+    }
+}

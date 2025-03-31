@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- My Lab 12 Template, Ashton Sears, H01, 11/14/2023 -->
+<meta charset="utf-8">
+<title>Lab 12</title>
+<style>
+body{background-color:#CC5500}
+
+#title{position:absolute;
+top:1000px;
+left:1000px;
+width:2000px;
+color:white;
+font-size:100pt;
+text-align:center;
+font-weight:bold;
+font-variant:small-caps;}
+
+.pic{position:absolute;
+left:0px;
+top:40px;
+width:200px;
+padding:5px;
+text-align:center;}
+
+.inner{position:absolute;
+left:950px;
+top:40px;
+font-size:100pt;
+color:white;
+text-align:center;
+font-weight:bold}
+
+#greeting{position:absolute;
+left:950px;
+top:600px;
+text-align:center;
+color:white;
+font-size:64pt;}
+
+.dining{position:absolute;
+left:3100px;
+top:40px;
+padding:5px;}
+</style>
+</head>
+<body>
+<div class="dining">
+<img height="1000" width="900" src="Lab12_Images/table1.jpg" alt="Thanksgiving table" onmouseover="this.src='Lab12_Images/table2.jpg';" onmouseout="this.src='Lab12_Images/table1.jpg';">
+</div>
+<div class="inner">
+<h1>It's Thanksgiving!</h1>
+</div>
+<p id="greeting">Give thanks to your loved ones and eat well! You deserve it!</p>
+<div class="pic">
+<img src="Lab12_Images/vegetables.jpg" alt="Card front" onclick="this.src='Lab12_Images/happyThanksgiving.jpg'; document.getElementById('title').innerHTML=' '; this.style.width='900px'; this.style.height='1000px';">
+</div>
+<div id="title">
+<h1>It's That Time of Year...</h1>
+</div>
+</body>
+</html> 

@@ -1,0 +1,113 @@
+/* Structure */
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F5EBD1;
+}
+
+#exercise1, #exercise2 {
+    text-align: center;
+    border: 1px solid #58004F;
+    color: #58004F;
+    background-color: #F4C7B7;
+    font-size: 24px;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/* Typography */
+h1{
+    text-align: center;
+    font-size: 42px;
+    color: #58004F;
+}
+
+h2{
+    text-align: center;
+    color: #CE7F98;
+    font-size: 36px;
+}
+
+h4{
+    text-align: center;
+    color: #CE7F98;
+    font-size: 28px;
+}
+
+.exercise_title{
+    font-size: 20px;
+}
+
+.exercise_instructions{
+    font-size: 16px;
+}
+
+.heart{
+    color: white;
+    font-size: 100px;
+}
+
+#transport_imag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#transport_img img {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+}
+
+/* Navigation */
+
+#main_nav_items li{
+    color: #58004F;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+#nav_triangle{
+    color:#58004F;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.hidden{
+    display: none;
+}
+
+.rotated{
+    transform: rotate(180deg);
+}
+
+/* Larger Resolutions */
+@media only screen and (min-width: 768px) {
+    .flex-container{
+        display: flex;
+    }
+
+    #main_nav_items{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #main_nav_items li{
+        display: inline;
+    }
+
+    #main_nav_items li:not(:last-child)::after {
+        content: '|';
+        margin-left: 8px;
+    }
+
+    #nav_toggle{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+}

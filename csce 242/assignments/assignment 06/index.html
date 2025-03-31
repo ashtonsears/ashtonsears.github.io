@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 6</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Assignment 6</h1>
+            <h2>If Statements</h2>
+            <nav id="main_nav">
+                <div id="nav_toggle">
+                    <p id="nav_triangle">▼</p>
+                </div>
+                <ul id="main_nav_items">
+                    <li onclick="showExercise(1)">Exercise 1</li>
+                    <li onclick="showExercise(2)">Exercise 2</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="exercise1">
+                <h2 class="exercise_title">Traveling</h2>
+                <h3 class="exercise_instructions">Enter your mode of Transportation</h3>
+                <input type="text" id="transport_input" placeholder="Enter transportation">
+                <div id="transport_img"></div>
+            </div>
+            <div id="exercise2" class="hidden">
+                <h2 class="exercise_title">Color My Heart</h2>
+                <button onclick="changeHeartColor('red')">Red</button>
+                <button onclick="changeHeartColor('blue')">Blue</button>
+                <button onclick="changeHeartColor('green')">Green</button>
+                <div class="heart">❤︎</div>
+            </div>
+        </main>
+        <footer>
+            <h4>@ashtonsears.com</h4>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

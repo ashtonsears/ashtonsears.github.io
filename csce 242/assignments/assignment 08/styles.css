@@ -1,0 +1,84 @@
+/* Structure */
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F5EBD1;
+}
+
+#exercise{
+    text-align: center;
+    position: relative;
+}
+
+#climb_stairs_div{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Typography */
+h1{
+    text-align: center;
+    font-size: 42px;
+    color: #58004F;
+}
+
+h2{
+    text-align: center;
+    color: #CE7F98;
+    font-size: 36px;
+}
+
+h4{
+    text-align: center;
+    color: #CE7F98;
+    font-size: 28px;
+}
+
+.hidden{
+    display: none;
+}
+
+#titles{
+    display: block;
+    text-align: center;
+    color: #f4c7b7;
+    text-shadow:#58004F 1px 1px 1px;
+    cursor: pointer;
+}
+
+section{
+    text-align: center;
+    color: #58004F;
+}
+
+section a{
+    color: #f4c7b7;
+    text-shadow:#58004F 1px 1px 1px;
+}
+
+#popups{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f4c7b7;
+    filter: drop-shadow(8px 8px 10px #58004F);
+    text-align: center;
+    width: 200px;
+}
+
+#popups h3{
+    color: #CE7F98;
+}
+
+#popups img{
+    width: auto;
+    height: 200px;
+}
+
+#close{
+    color:#CE7F98;
+    float: right;
+    cursor: pointer;
+    font-size: 22px;
+}

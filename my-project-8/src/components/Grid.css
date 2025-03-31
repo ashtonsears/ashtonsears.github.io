@@ -1,0 +1,28 @@
+/* Grid */
+.grid_img img{
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 225px;
+  }
+
+  .grid_img h4{
+    font-size: 18px;
+    background-color: #B3CDE0;
+    color: #ECEEEB;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+  }
+
+/* Large Resolutions */
+@media only screen and (min-width: 768px) {
+    .grid_img h4{
+        position: absolute;
+        padding: 10px;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+}
