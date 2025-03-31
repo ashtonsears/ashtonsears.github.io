@@ -1,0 +1,235 @@
+main{
+  padding: 20px;
+}
+
+main h3{
+  text-align: center;
+}
+
+.aboutcol1of2{
+  padding: 10px;
+}
+
+.aboutcol1of2 img{
+  width: 100%;
+  height: auto;
+  max-width: 1110px;
+}
+
+/* Calendar */
+/* Adapted from https://www.w3schools.com/howto/howto_css_calendar.asp */
+#stats_title{
+  margin-left: 5%;
+}
+
+#calendar ul{
+  list-style-type: none;
+}
+
+#calendar{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.month{
+  background-color: #011F4B;
+  color: #ECEEEB;
+  text-align: center;
+  padding: 10px;
+}
+
+.month ul{
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li{
+  font-size: 20px;
+}
+
+.month .prev{
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next{
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays{
+  margin: 0;
+  padding: 10px 0;
+  background-color: #005B96;
+}
+
+.weekdays li{
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  color: #ECEEEB;
+}
+
+.days{
+  padding: 10px 0;
+  background-color: #B3CDE0;
+  margin: 0;
+}
+
+.days li{
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.active {
+  background: #011F4B;
+  color: #ECEEEB !important;
+}
+
+.statcol1of2{
+  margin-left: 5%;
+}
+
+/* Grid */
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid div{
+  padding: 10px;
+  border: 10px solid #ECEEEB;
+  text-align: center;
+  position: relative;
+}
+
+/* Slideshow */
+.slideshow{
+  text-align: center;
+}
+
+.about_prev, .about_next{
+  font-size: 36px;
+  margin-top: 70px;
+  color: #6497B1;
+}
+
+/* Navigation */
+#main_nav{
+  text-align: right;
+  padding-bottom: 10px;
+  background-color: #011F4B;
+  margin: 0;
+}
+
+#main_nav ul{
+  list-style-type: none;
+}
+
+#main_nav li{
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+
+#main_nav a{
+  text-decoration: none;
+  color: #ECEEEB;
+}
+
+#main_nav a:hover{
+  text-decoration: underline;
+}
+
+#symptom_form{
+  background-color: #B3CDE0;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#symptom_text{
+  padding: 10px;
+}
+
+/* Sliders */
+.slide_container{
+  width: 70%;
+}
+
+.slider{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background-color: #6497B1;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #011F4B;
+  cursor: pointer;
+}
+
+/* Chart */
+.chart{
+  text-align: center;
+  padding:5px;
+}
+
+#sample_chart{
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-container{
+    display: flex;
+}
+  
+  #main_nav_items{
+    display: inline;
+  }
+
+  .aboutcol1of2, .statcol1of2{
+    flex: 1;
+  }
+
+  .grid{
+    grid-template-columns: repeat(var(--num-of-col, 3), 1fr);;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #main_nav{
+    text-align: center;
+  }
+  
+  #main_nav li{
+    display: block;
+    padding: 5px;
+    border: 1px solid #011F4B;
+    background-color: #B3CDE0;
+    margin-right: 40px;
+  }  
+
+  #main_nav_items{
+    margin-top: 0px;
+  }
+
+  .about_next, .about_prev{
+    display: none;
+  }
+
+  .grid{
+    grid-template-columns: repeat(var(--num-of-col, 1), 1fr);;
+  }
+}
