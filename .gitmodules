@@ -1,0 +1,3 @@
+[submodule "sleep_tracker_server"]
+	path = sleep_tracker_server
+	url = https://github.com/ashtonsears/sleep_tracker_server.git
