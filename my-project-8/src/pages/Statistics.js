@@ -1,4 +1,5 @@
 import chart from '../images/sample_chart_img.png';
+import '../styles/statistics.css';
 
 const Statistics = () => {
     return (

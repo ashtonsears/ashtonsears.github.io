@@ -2,6 +2,7 @@ import Slideshow from "../components/Slideshow";
 import hourglass from "../images/hourglass_img.svg";
 import beer from "../images/beer_img.svg";
 import third from "../images/1_in_3_img.png";
+import "../styles/home.css";
 
 const Home = () => {
     return (

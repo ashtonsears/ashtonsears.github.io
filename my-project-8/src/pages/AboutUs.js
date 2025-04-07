@@ -1,8 +1,10 @@
+import Contact from '../components/Contact';
 import Slideshow from '../components/Slideshow';
 import team from '../images/our_mission_img.jpg';
 import nurse from '../images/nurse_team_img.jpg';
 import programmer from '../images/programmer_team_img.jpg';
 import doctor from '../images/doctor_team_img.jpeg';
+import '../styles/about_us.css';
 
 const AboutUs = () => {
     return (
@@ -43,6 +45,10 @@ const AboutUs = () => {
                 <section class="aboutcol1of5 about_next">
                     <p>&#10095;</p>
                 </section>
+            </div>
+            <h2>Contact Us</h2>
+            <div id="symptom_form">
+                <Contact />
             </div>
         </main>
     );

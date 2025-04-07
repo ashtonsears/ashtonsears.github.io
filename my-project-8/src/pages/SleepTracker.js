@@ -1,3 +1,5 @@
+import '../styles/sleep_tracker.css';
+
 const SleepTracker = () => {
     return (
         <main>
