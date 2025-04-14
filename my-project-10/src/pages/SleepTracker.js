@@ -28,7 +28,7 @@ const SleepTracker = () => {
         </p>
         <p>If you notice pattern of sleep-wake disorder symptoms, schedule a visit with your primary care provider.
             They will be able to refer you to a sleep medicine physician, who can order several diagnostic tests like a polysomnography, an electroencephalogram, or a multiple sleep latency test.
-            These tests will help determine the cause of your symptoms. After receiving a diagnosis, you can work with your physicians to determine the best course of treatment.
+            These tests will help determine the cause of your symptoms and the best course of treatment.
         </p>
         <h2 id="symptom_title">Add a Sleep Symptom...</h2>
         <SymptomForm addSymptom={addSymptom}/>
