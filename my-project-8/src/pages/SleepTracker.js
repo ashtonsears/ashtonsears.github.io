@@ -1,6 +1,24 @@
 import '../styles/sleep_tracker.css';
+import SymptomForm from '../components/Symptom_Form';
+import Symptom from '../components/Symptom';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const SleepTracker = () => {
+    const [symptoms, setSymptoms] = useState([]);
+    const filteredSymptoms = symptoms.filter(symptom => symptom.symptom !== "Symptom Name");
+
+    useEffect(() => {
+        (async () => {
+            const response = await axios.get("https://sleep-tracker-server.onrender.com/api/sleep_symptoms");
+            setSymptoms(response.data);
+        })();
+    }, []);
+    
+    const addSymptom = (symptom) => {
+        setSymptoms(symptoms => [...symptoms, symptom]);
+    }
+
     return (
         <main>
         <h2>What Types of Symptoms Are There?</h2>
@@ -9,33 +27,24 @@ const SleepTracker = () => {
             These symptoms can impair daily functioning and can worsen both mental and physical health. 
         </p>
         <p>If you notice pattern of sleep-wake disorder symptoms, schedule a visit with your primary care provider.
-            They will be able to refer you to a sleep clinician, who can order several diagnostic tests like a polysomnography, an electroencephalogram, or a multiple sleep latency test.
+            They will be able to refer you to a sleep medicine physician, who can order several diagnostic tests like a polysomnography, an electroencephalogram, or a multiple sleep latency test.
             These tests will help determine the cause of your symptoms and the best course of treatment.
         </p>
         <h2 id="symptom_title">Add a Sleep Symptom...</h2>
-        <div id="symptom_form">
-            <div id="symptom_text">
-            <h5>Symptom:</h5>
-            <select name="symptoms" id="symptoms_dropdown">
-                <option value="Symptom A">Symptom A</option>
-                <option value="Symptom B">Symptom B</option>
-                <option value="Symptom C">Symptom C</option>
-                <option value="Symptom D">Symptom D</option>
-            </select>
-            <h5>Duration:</h5>
-            <input type="text" id="duration_box" name="duration_box"/>
-            <h5>Time of Day:</h5>
-            <div class="slide_container">
-                <input type="range" min="0" max="23" value="12" class="slider" id="time_range"/>
-            </div>
-            <h5>Restfulness:</h5>
-            <div class="slide_container">
-                <input type="range" min="1" max="10" value="5" class="slider" id="restfulness_range"/>
-            </div>
-            <h5>Notes:</h5>
-            <textarea id="notes" name="notes" rows="6" cols="30">Please log any other notes here.</textarea>
-            </div>
-        </div>
+        <SymptomForm addSymptom={addSymptom}/>
+        <h2 id="symptom_title">...or View Your Symptoms</h2>
+        <section id="symptom_container">
+            {filteredSymptoms.map((symptom) => (
+                <Symptom
+                name={symptom.symptom}
+                duration={symptom.duration}
+                severity={symptom.severity}
+                date={symptom.date}
+                time={symptom.time}
+                notes={symptom.notes}
+                />
+            ))}
+        </section>
     </main>
     );
   };

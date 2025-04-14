@@ -39,7 +39,7 @@ export default function Contact() {
           <label for="message">Your Message</label>
           <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
   
-          <button type="submit">Submit Form</button>
+          <button id="submit" type="submit">Submit Form</button>
   
         </form>
         <span>{result}</span>

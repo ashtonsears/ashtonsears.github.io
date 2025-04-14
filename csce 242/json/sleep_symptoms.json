@@ -1,0 +1,11 @@
+[
+    {
+        "_id": 1,
+        "symptom": "Symptom",
+        "duration": 1,
+        "severity": 1,
+        "date": "Date",
+        "time": "Time",
+        "notes": "Notes"
+    }
+]
