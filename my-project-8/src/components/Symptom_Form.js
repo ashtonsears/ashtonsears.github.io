@@ -11,16 +11,34 @@ const SymptomForm = (props) => {
         setInputs((values) => ({ ...values, [name]: value }));
     }
 
+    const formatTimeto12Hour = (time) => {
+      let [hours, minutes] = time.split(":");
+      let period = "AM";
+
+      if (parseInt(hours) >= 12) {
+        period = "PM";
+        if (parseInt(hours) > 12) {
+          hours -= 12;
+        }
+      } else if (hours === "00") {
+        hours = "12";
+      }
+      minutes = minutes.padStart(2, "0"); // Ensure minutes are always two digits
+      return `${hours}:${minutes} ${period}`;
+    }
+
     const onSubmit = async (event) => {
         event.preventDefault();
         setResult("Sending...");
+
+        const formattedTime = formatTimeto12Hour(inputs.time);
 
         const symptomData = {
             symptom: inputs.symptom,
             duration: Number(inputs.duration),
             severity: Number(inputs.severity),
             date: inputs.date,
-            time: inputs.time,
+            time: formattedTime,
             notes: inputs.notes || "",
         }
 
