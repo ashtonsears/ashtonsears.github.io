@@ -1,7 +1,21 @@
 import chart from '../images/sample_chart_img.png';
 import '../styles/statistics.css';
+import Symptom from '../components/Symptom';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 
 const Statistics = () => {
+    const [symptoms, setSymptoms] = useState([]);
+    const filteredSymptoms = symptoms.filter(symptom => symptom.symptom !== "Symptom Name");
+
+    useEffect(() => {
+        (async () => {
+            const response = await axios.get("https://sleep-tracker-server.onrender.com/api/sleep_symptoms");
+            setSymptoms(response.data);
+        })();
+    }, []);
+
     return (
         <main>
         <h2 id="stats_title">Your Sleep Statistics...</h2>
@@ -54,20 +68,20 @@ const Statistics = () => {
             <li>28</li>
         </ul>
     </div>
-    <div class="flex-container">
-        <section class="statcol1of2">
-            <h4>Average Sleep Duration:</h4>
-            <input type="text" id="avg_duration_box" name="avg_duration_box"/>
-            <h4>Average Restfulness:</h4>
-            <input type="text" id="restfulness_box" name="restfulness_box"/>
-        </section>
-        <section class="statcol1of2">
-            <h4>Average Number of Symptoms:</h4>
-            <input type="text" id="num_symptom_box" name="num_symptom_box"/>
-            <h4>Most Common Symptom:</h4>
-            <input type="text" id="common_symptom_box" name="common_symptom_box"/>
-        </section>
-    </div>
+    <h2 id="symptom_title">View Your Symptoms</h2>
+        <div id="symptom_container">
+            {filteredSymptoms.map((symptom) => (
+                <Symptom
+                _id={symptom._id}
+                symptom={symptom.symptom}
+                duration={symptom.duration}
+                severity={symptom.severity}
+                date={symptom.date}
+                time={symptom.time}
+                notes={symptom.notes}
+                />
+            ))}
+        </div>
     <h3>Average Daily Sleep for <span id="js_month">February</span></h3>
     <div class="chart">
         <img id="sample_chart" width="700" height="400" src={chart} alt="Sample Chart of Average Daily Sleep"/>

@@ -1,12 +1,14 @@
 import '../styles/sleep_tracker.css';
 import SymptomForm from '../components/Symptom_Form';
-import Symptom from '../components/Symptom';
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const SleepTracker = () => {
+    const addSymptom = (symptom) => {
+        setSymptoms(symptoms => [...symptoms, symptom]);
+    };
+
     const [symptoms, setSymptoms] = useState([]);
-    const filteredSymptoms = symptoms.filter(symptom => symptom.symptom !== "Symptom Name");
 
     useEffect(() => {
         (async () => {
@@ -14,10 +16,6 @@ const SleepTracker = () => {
             setSymptoms(response.data);
         })();
     }, []);
-    
-    const addSymptom = (symptom) => {
-        setSymptoms(symptoms => [...symptoms, symptom]);
-    }
 
     return (
         <main>
@@ -32,19 +30,6 @@ const SleepTracker = () => {
         </p>
         <h2 id="symptom_title">Add a Sleep Symptom...</h2>
         <SymptomForm addSymptom={addSymptom}/>
-        <h2 id="symptom_title">...or View Your Symptoms</h2>
-        <section id="symptom_container">
-            {filteredSymptoms.map((symptom) => (
-                <Symptom
-                name={symptom.symptom}
-                duration={symptom.duration}
-                severity={symptom.severity}
-                date={symptom.date}
-                time={symptom.time}
-                notes={symptom.notes}
-                />
-            ))}
-        </section>
     </main>
     );
   };
