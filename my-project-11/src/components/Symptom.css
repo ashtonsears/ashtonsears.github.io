@@ -36,13 +36,21 @@
     margin-bottom: 0;
 }
 
+.symptom-img{
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* Large Resolutions */
 @media only screen and (min-width: 768px) {
     .flex-container {
         display: flex;
     }
 
-    .symptom-title {
+    .symptom-title, .symptom-col1of2 {
         flex: 1;
     }
 }

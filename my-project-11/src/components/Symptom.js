@@ -55,6 +55,7 @@ const Symptom = (props) => {
               date={symptom.date}
               time={symptom.time}
               notes={symptom.notes}
+              image={symptom.image}
               closeEditDialog={closeEditDialog}
               editSymptom={editSymptom}
             />
@@ -74,13 +75,18 @@ const Symptom = (props) => {
                     </a>
                 </div>
               </div>
-                      <section>
+              <div className="flex-container">
+                <section className="symptom-col1of2">
+                  <img className="symptom-img" src={`https://sleep-tracker-server.onrender.com/images/${symptom.img}`} alt={symptom.symptom} />
+                </section>
+                <section className="symptom-col1of2">
                         <h5><strong>Symptom: </strong>{symptom.symptom}</h5>
                         <h5><strong>Duration: </strong>{symptom.duration}</h5>
                         <h5><strong>Severity: </strong>{symptom.severity}</h5>
                         <h5><strong>Notes: </strong>{symptom.notes}</h5>
-                      </section>
+                </section>
               </div>
+            </div>
       </div>
       ):("")}
     </>
